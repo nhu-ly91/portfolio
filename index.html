@@ -14,18 +14,15 @@
 <body>
     <!-- start header -->
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="left-nav">
-                <img src="images/logo.png" class="img-fluid" alt="logo">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"
+                        width="60">Nhu Ly Designer</a>
             </div>
-            <div class="right-nav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <button type="button">
-                    <span class="material-symbols-outlined">search</span>
-                    <input type="text" placeholder="Search">
-                </button>
+            <div class="right-nav nav-item d-flex justify-content-end align-items-center gap-5">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link" href="contact.html">Contact</a>
             </div>
         </nav>
     </header>
@@ -33,78 +30,74 @@
     <!-- start main -->
     <main>
         <!-- making banner -->
-        <div class="banner">
-            <div class="banner-container">
-                <img src="images/banner.jpg" alt="banner-img" class="img-fluid">
+        <div class="banner row">
+            <div class="banner-container position-relative">
+                <img src="images/banner.jpg" alt="banner-img" class="img-fluid order-1">
             </div>
-            <div class="text-child">
+            <div class="text-child order-1 position-absolute align-self-center">
                 <h1>Nhu Ly Designer</h1>
                 <p>Creative. Innovation. Never late.</p>
-                <button>Contact me</button>
+                <button type="button" class="btn btn-dark">Contact me</button>
             </div>
         </div>
 
         <!-- making about -->
-        <div class="about">
-            <img src="images/women.png" alt="about-img">
-            <h3>About me</h3>
-            <p>I’m Nhu, a seasoned graphic designer with a decade of experience specializing in advertising and
-                character licensing. Throughout my career, I have honed my skills in creating visually appealing and
-                effective design solutions that captivate audiences and convey compelling messages.</p>
-
+        <div class="about row justify-content-around">
+            <div class="col-5">
+                <img src="images/women.png" alt="about-img" width="400px">
+            </div>
+            <div class="align-self-center text-center col-5">
+                <h3>About me</h3>
+                <p>I’m Nhu, a seasoned graphic designer with a decade of experience specializing in advertising and
+                    character licensing. Throughout my career, I have honed my skills in creating visually appealing and
+                    effective design solutions that captivate audiences and convey compelling messages.</p>
+            </div>
         </div>
 
         <!-- starting best works -->
-        <div class="works">
-            <div class="introduce">
+        <div class="works bg-light row">
+            <div class="introduce col-5 order-1 align-self-center">
                 <h3>The Best Works</h3>
                 <p>Welcome to the world of innovative design where creativity meets functionality! With a passion for
                     visual storytelling and a keen eye for aesthetics, I have established a remarkable portfolio in the
                     realms of graphic art and web design. Diving into the world of graphic art, I have mastered the art
                     of creating visually striking illustrations, logos, and branding materials that not only captivate
                     audiences but also convey the essence of each project.In the dynamic landscape of web design, I
-                    excel in crafting immersive digital experiences that seamlessly blend form and function. With
-                    expertise in user interface (UI) and user experience (UX) design principles, I ensure that every
-                    website not only looks stunning but also provides intuitive navigation and optimal usability.</p>
-                <button type="button" class="detail-btn">Detail</button>
+                    excel in crafting immersive digital experiences that seamlessly blend form and function.</p>
+                <button type="button" class="detail-btn btn btn-dark">Detail</button>
             </div>
 
-            <div class="works-img">
-                <img src="images/gundam-1.jpg" alt="works-img">
-                <img src="images/web-1.png" alt="works-img">
-                <img src="images/web-2.png" alt="works-img">
-                <img src="images/gundam-2.jpg" alt="works-img">
-                <img src="images/pokemon.jpg" alt="works-img">
-                <img src="images/web-3.png" alt="works-img">
+            <div class="works-img col-7 order-2 align-self-end p-0">
+                <img class="align-items-end img-fluid" src="images/works-img.png" alt="works-img">
             </div>
         </div>
 
         <!-- starting client's feedback -->
         <div class="feedback">
-            <div class="feedback-text">
+            <div class="feedback-text align-self-center text-center">
                 <h3>Client's feedback</h3>
                 <p>client feedback serves as a valuable tool for designers to continuously improve their work, ensure
                     alignment with client objectives, foster collaboration, and ultimately deliver designs that exceed
                     client expectations.</p>
             </div>
 
-            <div class="client-comment">
-                <div class="client-1">
-                    <img src="images/man-1.png" alt="client-img">
+            <div class="client-comment d-flex gap-3">
+                <div class="client-1 d-flex flex-column bg-black text-white align-items-center p-5 text-center">
+                    <img class="rounded-circle" width="100px" src="images/man-1.png" alt="client-img">
                     <p>John</p>
                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                         est laborum.</p>
                 </div>
 
-                <div class="client-2">
-                    <img src="images/man-2.png" alt="client-img">
+                <div class="client-2 d-flex flex-column bg-black text-white align-items-center p-5 text-center">
+                    <img class="rounded-circle float-start" width="100px" src="images/man-2.png" alt="client-img">
                     <p>Jack</p>
                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                         est laborum.</p>
                 </div>
 
-                <div class="client-3">
-                    <img src="images/women-2.jpg" alt="client-img">
+                <div class="client-3 d-flex flex-column bg-black text-white align-items-center p-5 text-center">
+                    <img class="rounded-circle float-start" width="100px" src="images/women-2.jpg" alt="client-img">
                     <p>Jessica</p>
                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                         est laborum.</p>
@@ -114,10 +107,29 @@
     </main>
 
     <!-- start footer -->
-    <footer>
-
+    <footer class="d-flex justify-content-lg-between p-4">
+        <div>
+            <img src="images/logo.png" alt="footer-img" width="40px">
+            <blockquote>© by Nhu Ly Designer 2024</blockquote>
+        </div>
+        <div class="pages d-flex flex-column">
+            <a class="text-decoration-none text-black" href="index.html">Home</a>
+            <a class="text-decoration-none text-black" href="projects.html">Projects</a>
+            <a class="text-decoration-none text-black" href="Contact.html">Contact</a>
+        </div>
+        <div class="social-media d-flex flex-column">
+            <a class="text-decoration-none text-black" href="#">Facebook</a>
+            <a class="text-decoration-none text-black" href="#">Twitter</a>
+            <a class="text-decoration-none text-black" href="#">Instagram</a>
+        </div>
+        <div class="footer-contact">
+            <p>+44 345 678 903</p>
+            <p>adobexd@mail.com</p>
+        </div>
+        <button type="button" class="btn btn-dark">Top</button>
     </footer>
 
+    <!-- added script -->
     <script scr="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
