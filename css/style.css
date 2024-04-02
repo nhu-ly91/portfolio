@@ -2,14 +2,11 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     background-color: #FFF200;
     margin-left: 150px;
     margin-right: 150px;
 }
-
-
 
 @media (max-width: 600px) {
 body {
