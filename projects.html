@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Projects</title>
 </head>
@@ -13,12 +14,18 @@
     <header>
         <nav class="navbar row">
             <div class="left-nav col-12 col-lg-4">
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"
-                        width="60">Nhu Ly Designer</a>
+                <a class="navbar-brand" href="index.html">
+                    <picture class="logo-banner">
+                        <source media="(max-width: 430px)" srcset="images/logo-1x.png">
+                        <source media="(min-width: 430px)" srcset="images/logo-2x.png">
+                        <img srcset="images/logo-2x.png, images/logo-1x.png" src="images/logo-2x.png" class="img-fluid" alt="logo" width="60">
+                    </picture>
+                    Nhu Ly Designer
+                </a>
             </div>
             <div class="right-nav nav-item col-12 col-lg-8 d-flex justify-content-end align-items-center gap-5">
-                <a class="nav-link text-decoration-underline" href="index.html">Home</a>
-                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link text-decoration-underline" href="projects.html">Projects</a>
                 <a class="nav-link" href="contact.html">Contact</a>
             </div>
         </nav>
@@ -40,53 +47,51 @@
         <div class="cat-btn row justify-content-evenly p-2 m-2">
             <a href="#web" class="btn btn-primary align-content-center col-3 col-lg-2">Web Design</a>
             <a href="#graphic" class="btn btn-primary align-content-center col-3 col-lg-2">Graphic Design</a>
-            <a href="#play" class="btn btn-primary align-content-center col-3 col--lg2">Playground</a>
+            <a href="#play" class="btn btn-primary align-content-center col-3 col-lg-2">Playground</a>
         </div>
 
         <!-- making category -->
-        <div class="category d-grid gap-0 row-gap-3">
-            
-            <!-- Web cat -->
-            <h5 class="m-0" id="web">Web Design</h5>
-            <div id="web-cat" class="row bg-white justify-content-between gap-0 carousel slide">
-                <div class="web-1 text-center p-sm-0 col-6 col-lg-3">
-                    <img src="images/web-cat-1.png" alt="web-cat" class="img-fluid card-img card-img-top">
-                    <div class="text-web">
-                        <a href="#" class="mt-2 text-decoration-none"><strong>Hydro Fill</strong></a>
-                    </div>
-                </div>
+        <div class="category d-grid gap-0 row-gap-3">        
+           <!-- Web cat -->
+           <h5 class="m-0" id="web">Web Design</h5>
+           <div id="web-cat" class="row bg-white justify-content-between gap-0 carousel slide">
+               <div class="web-1 text-center p-sm-0 col-6 col-lg-3">
+                   <img src="images/web-cat-1.png" alt="web-cat" class="img-fluid">
+                   <div class="text-web">
+                       <a href="#" class="mt-2 text-decoration-none"><strong>Hydro Fill</strong></a>
+                   </div>
+               </div>
 
-                <div class="web-2 text-center p-sm-0 col-6 col-lg-3">
-                    <img src="images/web-cat-2.jpeg" alt="web-cat" class="img-fluid">
-                    <div class="text-web">
-                        <a href="#" class="mt-2 text-decoration-none"><strong>Hubstaff</strong></a>
-                    </div>
-                </div>
+               <div class="web-2 text-center p-sm-0 col-6 col-lg-3">
+                   <img src="images/web-cat-2.jpeg" alt="web-cat" class="img-fluid">
+                   <div class="text-web">
+                       <a href="#" class="mt-2 text-decoration-none"><strong>Hubstaff</strong></a>
+                   </div>
+               </div>
 
-                <div class="web-3 text-center p-sm-0 col-6 col-lg-3">
-                    <img src="images/web-cat-3.jpeg" alt="web-cat" class="img-fluid">
-                    <div class="text-web">
-                        <a href="#" class="mt-2 text-decoration-none"><strong>Billey</strong></a>
-                    </div>
-                </div>
+               <div class="web-3 text-center p-sm-0 col-6 col-lg-3">
+                   <img src="images/web-cat-3.jpeg" alt="web-cat" class="img-fluid">
+                   <div class="text-web">
+                       <a href="#" class="mt-2 text-decoration-none"><strong>Billey</strong></a>
+                   </div>
+               </div>
 
-                <div class="web-4 text-center p-sm-0 col-6 col-lg-3">
-                    <img src="images/web-cat-4.png" alt="web-cat" class="img-fluid">
-                    <div class="text-web">
-                        <a href="#" class="mt-2 text-decoration-none"><strong>Utech Media</strong></a>
-                    </div>
-                </div>
+               <div class="web-4 text-center p-sm-0 col-6 col-lg-3">
+                   <img src="images/web-cat-4.png" alt="web-cat" class="img-fluid">
+                   <div class="text-web">
+                       <a href="#" class="mt-2 text-decoration-none"><strong>Utech Media</strong></a>
+                   </div>
+               </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#web-cat" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#web-cat" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
+               <button class="carousel-control-prev" type="button" data-bs-target="#web-cat" data-bs-slide="prev">
+                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#web-cat" data-bs-slide="next">
+                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Next</span>
+               </button>
+           </div>
 
             <!-- Graphic Cat -->
             <h5 class="m-0" id="graphic">Graphic Design</h5>
@@ -176,8 +181,13 @@
     <!-- start footer -->
     <footer class="d-flex justify-content-lg-between p-4">
         <div>
-            <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"
-                width="60"></a>
+            <a class="navbar-brand" href="index.html">
+                <picture class="logo-banner">
+                        <source media="(max-width: 430px)" srcset="images/logo-1x.png">
+                        <source media="(min-width: 430px)" srcset="images/logo-2x.png">
+                        <img srcset="images/logo-2x.png, images/logo-1x.png" src="images/logo-2x.png" class="img-fluid" alt="logo" width="60">
+                </picture>
+            </a>
             <blockquote class="pt-lg-5">© by Nhu Ly Designer 2024</blockquote>
         </div>
         <div class="pages d-flex flex-column">
@@ -199,5 +209,7 @@
 
     <!-- added script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/project.js"></script>
 </body>
 </html>

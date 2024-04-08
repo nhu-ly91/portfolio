@@ -14,13 +14,19 @@
     <header>
         <nav class="navbar row">
             <div class="left-nav col-12 col-lg-4">
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"
-                        width="60">Nhu Ly Designer</a>
+                <a class="navbar-brand" href="index.html">
+                    <picture class="logo-banner">
+                        <source media="(max-width: 430px)" srcset="images/logo-1x.png">
+                        <source media="(min-width: 430px)" srcset="images/logo-2x.png">
+                        <img srcset="images/logo-2x.png, images/logo-1x.png" src="images/logo-2x.png" class="img-fluid" alt="logo" width="60">
+                    </picture>
+                    Nhu Ly Designer
+                </a>
             </div>
             <div class="right-nav nav-item col-12 col-lg-8 d-flex justify-content-end align-items-center gap-5">
-                <a class="nav-link text-decoration-underline" href="index.html">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
                 <a class="nav-link" href="projects.html">Projects</a>
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link text-decoration-underline" href="contact.html">Contact</a>
             </div>
         </nav>
     </header>
@@ -58,8 +64,8 @@
                 </form>
             </div>
 
-            <div class="contact-img col-12 col-lg-5 order-3">
-                <img src="images/women.png" alt="contact-img" class="img-fluid">
+            <div class="contact-img col-12 col-lg-5 order-lg-2 offset-lg-2">
+                <img src="images/profile-pic-2x.png" alt="contact-img" class="img-fluid">
                 <div class="bg-primary">
                     <p class="text-white text-center">Nhu Ly</p>
                     <p class="text-white text-center">+123 456 789 234  |  nhuly@gmail.com</p>
@@ -71,8 +77,13 @@
     <!-- start footer -->
     <footer class="d-flex justify-content-lg-between p-4">
         <div>
-            <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"
-                width="60"></a>
+            <a class="navbar-brand" href="index.html">
+                <picture class="logo-banner">
+                        <source media="(max-width: 430px)" srcset="images/logo-1x.png">
+                        <source media="(min-width: 430px)" srcset="images/logo-2x.png">
+                        <img srcset="images/logo-2x.png, images/logo-1x.png" src="images/logo-2x.png" class="img-fluid" alt="logo" width="60">
+                </picture>
+            </a>
             <blockquote>© by Nhu Ly Designer 2024</blockquote>
         </div>
         <div class="pages d-flex flex-column">
