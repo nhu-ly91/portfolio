@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Projects</title>
 </head>
+
 <body id="top">
     <!-- start header -->
     <header>
-        <nav class="navbar">
-            <div class="left-nav">
+        <nav class="navbar row">
+            <div class="left-nav col-12 col-lg-4">
                 <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"
                         width="60">Nhu Ly Designer</a>
             </div>
-            <div class="right-nav nav-item d-flex justify-content-end align-items-center gap-5">
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link text-decoration-underline" href="projects.html">Projects</a>
+            <div class="right-nav nav-item col-12 col-lg-8 d-flex justify-content-end align-items-center gap-5">
+                <a class="nav-link text-decoration-underline" href="index.html">Home</a>
+                <a class="nav-link" href="projects.html">Projects</a>
                 <a class="nav-link" href="contact.html">Contact</a>
             </div>
         </nav>
@@ -37,16 +38,19 @@
         </div>
 
         <div class="cat-btn row justify-content-evenly p-2 m-2">
-            <a href="#web" class="btn btn-primary align-content-center col-2 container-fluid">Web Design</a>
-            <a href="#graphic" class="btn btn-primary align-content-center col-2 container-fluid">Graphic Design</a>
-            <a href="#play" class="btn btn-primary align-content-center col-2 container-fluid">Playground</a>
+            <a href="#web" class="btn btn-primary align-content-center col-3 col-lg-2">Web Design</a>
+            <a href="#graphic" class="btn btn-primary align-content-center col-3 col-lg-2">Graphic Design</a>
+            <a href="#play" class="btn btn-primary align-content-center col-3 col--lg2">Playground</a>
         </div>
 
+        <!-- making category -->
         <div class="category d-grid gap-0 row-gap-3">
+            
+            <!-- Web cat -->
             <h5 class="m-0" id="web">Web Design</h5>
-            <div class="web-cat row bg-white justify-content-between gap-0">
+            <div id="web-cat" class="row bg-white justify-content-between gap-0 carousel slide">
                 <div class="web-1 text-center p-sm-0 col-6 col-lg-3">
-                    <img src="images/web-cat-1.png" alt="web-cat" class="img-fluid">
+                    <img src="images/web-cat-1.png" alt="web-cat" class="img-fluid card-img card-img-top">
                     <div class="text-web">
                         <a href="#" class="mt-2 text-decoration-none"><strong>Hydro Fill</strong></a>
                     </div>
@@ -72,41 +76,63 @@
                         <a href="#" class="mt-2 text-decoration-none"><strong>Utech Media</strong></a>
                     </div>
                 </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#web-cat" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#web-cat" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
+
+            <!-- Graphic Cat -->
             <h5 class="m-0" id="graphic">Graphic Design</h5>
-            <div class="web-cat row bg-white justify-content-between">
-                <div class="web-1 text-center p-sm-0 col-6 col-lg-3">
+            <div class="gra-cat row bg-white justify-content-between carousel slide">
+                <div class="gra-1 text-center p-sm-0 col-6 col-lg-3">
                     <img src="images/gra-cat-1.jpg" alt="gra-cat" class="img-fluid">
                     <div class="text-web">
                         <a href="#" class="mt-2 text-decoration-none"><strong>Gundam Builder World Cup 2019</strong></a>
                     </div>
                 </div>
 
-                <div class="web-2 text-center p-sm-0 col-6 col-lg-3">
+                <div class="gra-2 text-center p-sm-0 col-6 col-lg-3">
                     <img src="images/gra-cat-2.jpg" alt="gra-cat" class="img-fluid">
                     <div class="text-web">
                         <a href="#" class="mt-2 text-decoration-none"><strong>Pokemon Movie Poster</strong></a>
                     </div>
                 </div>
 
-                <div class="web-3 text-center p-sm-0 col-6 col-lg-3">
+                <div class="gra-3 text-center p-sm-0 col-6 col-lg-3">
                     <img src="images/gra-cat-3.jpg" alt="gra-cat" class="img-fluid">
                     <div class="text-web">
                         <a href="#" class="mt-2 text-decoration-none"><strong>Pokemon Calendar</strong></a>
                     </div>
                 </div>
 
-                <div class="web-4 text-center p-sm-0 col-6 col-lg-3">
+                <div class="gra-4 text-center p-sm-0 col-6 col-lg-3">
                     <img src="images/gra-cat-4.jpg" alt="gra-cat" class="img-fluid">
                     <div class="text-web">
                         <a href="#" class="mt-2 text-decoration-none"><strong>Title of project</strong></a>
                     </div>
                 </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#web-cat" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#web-cat" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
+
+            <!-- Playground cat -->
             <h5 class="m-0" id="play">Playground</h5>
-            <div class="web-cat row bg-white justify-content-between">
+            <div class="web-cat row bg-white justify-content-between carousel slide">
                 <div class="web-1 text-center p-sm-0 col-6 col-lg-3">
                     <img src="images/play-cat-1.jpg" alt="play-cat" class="img-fluid">
                     <div class="text-web">
@@ -134,9 +160,16 @@
                         <a href="#" class="mt-2 text-decoration-none"><strong>Rubber running lane</strong></a>
                     </div>
                 </div>
-            </div>
-            
 
+                <button class="carousel-control-prev" type="button" data-bs-target="#web-cat" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#web-cat" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
     </main>
 
@@ -145,7 +178,7 @@
         <div>
             <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"
                 width="60"></a>
-            <blockquote>© by Nhu Ly Designer 2024</blockquote>
+            <blockquote class="pt-lg-5">© by Nhu Ly Designer 2024</blockquote>
         </div>
         <div class="pages d-flex flex-column">
             <a class="text-decoration-none text-black" href="index.html">Home</a>
@@ -158,8 +191,8 @@
             <a class="text-decoration-none text-black" href="#">Instagram</a>
         </div>
         <div class="footer-contact">
-            <p>+44 345 678 903</p>
-            <p>adobexd@mail.com</p>
+            <p class="m-0 m-lg-0">+44 345 678 903</p>
+            <p class="m-0 m-lg-0">adobexd@mail.com</p>
         </div>
         <a href="#top" class="btn btn-primary align-content-center">Top</a>
     </footer>
