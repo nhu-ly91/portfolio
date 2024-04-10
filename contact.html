@@ -65,7 +65,11 @@
             </div>
 
             <div class="contact-img col-12 col-lg-5 order-lg-2 offset-lg-2">
-                <img src="images/profile-pic-2x.png" alt="contact-img" class="img-fluid">
+                <picture>
+                    <source media="(max-width: 430px)" srcset="images/profile-pic-1x.png">
+                    <source media="(min-width: 430px)" srcset="images/profile-pic-2x.png">
+                    <img srcset="images/profile-pic-1x.png, images/profile-pic-2x.png" src="images/profile-pic-2x.png" alt="about-img" class="img-fluid">
+                </picture>
                 <div class="bg-primary">
                     <p class="text-white text-center">Nhu Ly</p>
                     <p class="text-white text-center">+123 456 789 234  |  nhuly@gmail.com</p>

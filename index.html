@@ -38,9 +38,9 @@
         <div class="banner row">
             <div class="banner-container position-relative">
                 <picture>
-                    <source media="(max-width: 430px)" srcset="images/banner-1x.jpg">
-                    <source media="(min-width: 430px)" srcset="images/banner-2x.jpg">
-                    <img srcset="images/banner-1x.jpg, images/banner-2x.jpg" src="images/banner-2x.jpg" alt="banner-img" class="img-fluid order-1">
+                    <source media="(max-width: 430px)" srcset="images/banner-1-1x.jpg">
+                    <source media="(min-width: 430px)" srcset="images/banner-1-2x.jpg">
+                    <img srcset="images/banner-1-1x.jpg, images/banner-1-2x.jpg" src="images/banner-1-2x.jpg" alt="banner-img" class="img-fluid order-1">
                 </picture>
             </div>
             <div class="text-child order-1 position-absolute align-self-center">
@@ -57,7 +57,7 @@
                 <picture>
                     <source media="(max-width: 430px)" srcset="images/profile-pic-1x.png">
                     <source media="(min-width: 430px)" srcset="images/profile-pic-2x.png">
-                    <img src="images/profile-pic-2x.png" alt="about-img" class="img-fluid">
+                    <img srcset="images/profile-pic-1x.png, images/profile-pic-2x.png" src="images/profile-pic-2x.png" alt="about-img" class="img-fluid">
                 </picture>
             </div>
             <div class="align-self-center text-center col-12 col-lg-6">
@@ -83,7 +83,11 @@
             </div>
 
             <div class="works-img col-12 col-lg-8 order-2 align-self-end p-0">
-                <img class="align-items-end img-fluid" src="images/works-img.png" alt="works-img">
+                <picture>
+                    <source media="(max-width: 430px)" srcset="images/works-img-1x.png">
+                    <source media="(min-width: 430px)" srcset="images/works-img-2x.png">
+                    <img srcset="images/works-img-1x.png, images/works-img-2x.png" class="align-items-end img-fluid" src="images/works-img-2x.png" alt="works-img">
+                </picture>
             </div>
         </div>
 
@@ -98,22 +102,34 @@
 
             <div class="client-comment row gap-3 justify-content-center">
                 <div class="client-1 bg-primary col-12 col-lg-3 text-white align-items-center p-3 p-lg-2 text-center">
-                    <img class="rounded-circle img-fluid w-50" src="images/man-1.png" alt="client-img">
-                    <p>John</p>
+                    <picture>
+                        <source media="(max-width: 430px)" srcset="images/client-1-1x.png">
+                        <source media="(min-width: 430px)" srcset="images/client-1-2x.png">
+                        <img srcset="images/client-1-1x.png, images/client-1-2x.png" class="rounded-circle img-fluid w-50" src="images/client-1-2x.png" alt="client-img">
+                    </picture>
+                    <p><strong>John</strong></p>
                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                         est laborum.</p>
                 </div>
 
                 <div class="client-2 col-12 col-lg-3 bg-primary text-white align-items-center p-3 p-lg-2 text-center">
-                    <img class="rounded-circle img-fluid w-50" src="images/man-2.png" alt="client-img">
-                    <p>Jack</p>
+                    <picture>
+                        <source media="(max-width: 430px)" srcset="images/client-2-1x.png">
+                        <source media="(min-width: 430px)" srcset="images/client-2-2x.png">
+                        <img srcset="images/client-2-1x.png, images/client-2-2x.png" class="rounded-circle img-fluid w-50" src="images/client-2-2x.png" alt="client-img">
+                    </picture>
+                    <p><strong>Jack</strong></p>
                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                         est laborum.</p>
                 </div>
 
                 <div class="client-3 col-12 col-lg-3 bg-primary text-white align-items-center p-3 p-lg-2 text-center">
-                    <img class="rounded-circle img-fluid w-50" src="images/women-2.jpg" alt="client-img">
-                    <p>Jessica</p>
+                    <picture>
+                        <source media="(max-width: 430px)" srcset="images/client-3-1x.jpg">
+                        <source media="(min-width: 430px)" srcset="images/client-3-2x.jpg">
+                        <img srcset="images/client-3-1x.jpg, images/client-3-2x.jpg" class="rounded-circle img-fluid w-50" src="images/client-3-2x.jpg" alt="client-img">
+                    </picture>
+                    <p><strong>Jessica</strong></p>
                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                         est laborum.</p>
                 </div>
