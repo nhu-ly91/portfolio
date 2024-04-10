@@ -48,6 +48,23 @@ body {
     top: 120px;
 }
 
+.skip{
+    position:absolute;
+    top:auto;
+    width: 2px;
+    height: 2px;  
+    color: black;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  
+  .skip:focus{
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 2px;
+  }
+
 /* start media queri */
 @media (max-width: 600px) {
     body {
