@@ -11,11 +11,15 @@ html {
 /* change primary color */
 .nav-link {
     color: var(--custom-dark-grey);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .nav-link:hover {
     background-color: var(--custom-dark-grey);
     color: var(--custom-yellow);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .bg-primary {
@@ -40,9 +44,18 @@ body {
     margin-right: 150px;
 }
 
+.banner-text {
+    top: 120px;
+}
+
+/* start media queri */
 @media (max-width: 600px) {
     body {
         margin-left: 10px;
         margin-right: 10px;
     }
-}    
+
+    .banner-text {
+        top: 10px;
+    }
+}   
