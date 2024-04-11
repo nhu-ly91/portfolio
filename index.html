@@ -14,7 +14,7 @@
     <header>
         <a href="#main-content" aria-label="Skip to main content" class="skip">Skip to main content</a>
         <nav class="navbar row">
-            <div class="left-nav col-12 col-lg-4">
+            <div role="navigation" class="left-nav col-12 col-lg-4">
                 <a class="navbar-brand" href="index.html">
                     <picture class="logo-banner">
                         <source media="(max-width: 430px)" srcset="images/logo-1x.png">
@@ -25,7 +25,7 @@
                 </a>
             </div>
 
-            <div class="right-nav nav-item col-12 col-lg-8 d-flex justify-content-end align-items-center gap-5">
+            <div role="navigation" class="right-nav nav-item col-12 col-lg-8 d-flex justify-content-end align-items-center gap-5">
                 <a class="nav-link text-decoration-underline" href="index.html">Home</a>
                 <a class="nav-link" href="projects.html">Projects</a>
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -36,7 +36,7 @@
     <!-- start main -->
     <main>
         <!-- making banner -->
-        <div class="banner row">
+        <div role="banner" class="banner row">
             <div class="banner-container position-relative">
                 <picture>
                     <source media="(max-width: 430px)" srcset="images/banner-1-1x.jpg">
@@ -44,7 +44,7 @@
                     <img src="images/banner-1-2x.jpg" alt="banner-img" class="img-fluid order-1">
                 </picture>
             </div>
-            <div class="text-child order-1 position-absolute align-self-center">
+            <div role="textbox" class="text-child order-1 position-absolute align-self-center">
                 <h1>Nhu Ly Designer</h1>
                 <p>Creative. Innovation. Never late.</p>
                 <button type="button" class="btn btn-primary" onclick="document.location='contact.html'">Contact
@@ -53,15 +53,15 @@
         </div>
 
         <!-- making about -->
-        <div class="about row justify-content-around">
-            <div class="col-12 col-lg-6">
+        <div role="contentinfo" class="about row justify-content-around">
+            <div role="img" class="col-12 col-lg-6">
                 <picture>
                     <source media="(max-width: 430px)" srcset="images/profile-pic-1x.png">
                     <source media="(min-width: 430px)" srcset="images/profile-pic-2x.png">
                     <img src="images/profile-pic-2x.png" alt="about-img" class="img-fluid">
                 </picture>
             </div>
-            <div class="align-self-center text-center col-12 col-lg-6">
+            <div role="textbox" class="align-self-center text-center col-12 col-lg-6">
                 <h3>About me</h3>
                 <p>I’m Nhu, a seasoned graphic designer with a decade of experience specializing in advertising and
                     character licensing. Throughout my career, I have honed my skills in creating visually appealing and
@@ -70,8 +70,8 @@
         </div>
 
         <!-- starting best works -->
-        <div class="works bg-light row">
-            <div class="introduce col-12 col-lg-4 order-1 align-self-center">
+        <div role="contentinfo" class="works bg-light row">
+            <div role="textbox" class="introduce col-12 col-lg-4 order-1 align-self-center">
                 <h3>The Best Works</h3>
                 <p>Welcome to the world of innovative design where creativity meets functionality! With a passion for
                     visual storytelling and a keen eye for aesthetics, I have established a remarkable portfolio in the
@@ -83,7 +83,7 @@
                     onclick="document.location='projects.html'">Detail</button>
             </div>
 
-            <div class="works-img col-12 col-lg-8 order-2 align-self-end p-0">
+            <div role="img" class="works-img col-12 col-lg-8 order-2 align-self-end p-0">
                 <picture>
                     <source media="(max-width: 430px)" srcset="images/works-img-1x.png">
                     <source media="(min-width: 430px)" srcset="images/works-img-2x.png">
@@ -93,16 +93,16 @@
         </div>
 
         <!-- starting client's feedback -->
-        <div class="feedback container-fluid">
-            <div class="feedback-text align-self-center text-center">
+        <div role="contentinfo" class="feedback container-fluid">
+            <div role="textbox" class="feedback-text align-self-center text-center">
                 <h3>Client's feedback</h3>
                 <p>Client feedback serves as a valuable tool for designers to continuously improve their work, ensure
                     alignment with client objectives, foster collaboration, and ultimately deliver designs that exceed
                     client expectations.</p>
             </div>
 
-            <div class="client-comment row gap-3 justify-content-center">
-                <div class="client-1 bg-primary col-12 col-lg-3 text-white align-items-center p-3 p-lg-2 text-center">
+            <div role="contentinfo" class="client-comment row gap-3 justify-content-center">
+                <div role="contentinfo" class="client-1 bg-primary col-12 col-lg-3 text-white align-items-center p-3 p-lg-2 text-center">
                     <picture>
                         <source media="(max-width: 430px)" srcset="images/client-1-1x.png">
                         <source media="(min-width: 430px)" srcset="images/client-1-2x.png">
@@ -112,7 +112,7 @@
                     <p>I'm impressed with how user-friendly the website is. Navigation is smooth, and everything is easy to find.</p>
                 </div>
 
-                <div class="client-2 col-12 col-lg-3 bg-primary text-white align-items-center p-3 p-lg-2 text-center">
+                <div role="contentinfo" class="client-2 col-12 col-lg-3 bg-primary text-white align-items-center p-3 p-lg-2 text-center">
                     <picture>
                         <source media="(max-width: 430px)" srcset="images/client-2-1x.png">
                         <source media="(min-width: 430px)" srcset="images/client-2-2x.png">
@@ -122,7 +122,7 @@
                     <p>The website looks fantastic! The layout is clean and modern, and it perfectly captures our brand identity.</p>
                 </div>
 
-                <div class="client-3 col-12 col-lg-3 bg-primary text-white align-items-center p-3 p-lg-2 text-center">
+                <div role="contentinfo" class="client-3 col-12 col-lg-3 bg-primary text-white align-items-center p-3 p-lg-2 text-center">
                     <picture>
                         <source media="(max-width: 430px)" srcset="images/client-3-1x.jpg">
                         <source media="(min-width: 430px)" srcset="images/client-3-2x.jpg">
@@ -137,7 +137,7 @@
 
     <!-- start footer -->
     <footer class="d-flex justify-content-lg-between p-4">
-        <div>
+        <div role="contentinfo">
             <a class="navbar-brand" href="index.html">
                 <picture class="logo-banner">
                         <source media="(max-width: 430px)" srcset="images/logo-1x.png">
@@ -147,17 +147,17 @@
             </a>
             <blockquote class="pt-5 pt-lg-5">© by Nhu Ly Designer 2024</blockquote>
         </div>
-        <div class="pages d-flex flex-column">
+        <div role="navigation" class="pages d-flex flex-column">
             <a class="text-decoration-none text-black" href="index.html">Home</a>
             <a class="text-decoration-none text-black" href="projects.html">Projects</a>
             <a class="text-decoration-none text-black" href="Contact.html">Contact</a>
         </div>
-        <div class="social-media d-flex flex-column">
+        <div role="navigation" class="social-media d-flex flex-column">
             <a class="text-decoration-none text-black" href="#">Facebook</a>
             <a class="text-decoration-none text-black" href="#">Twitter</a>
             <a class="text-decoration-none text-black" href="#">Instagram</a>
         </div>
-        <div class="footer-contact">
+        <div role="textbox" class="footer-contact">
             <p class="m-0 m-lg-0">+44 345 678 903</p>
             <p class="m-0 m-lg-0">adobexd@mail.com</p>
         </div>

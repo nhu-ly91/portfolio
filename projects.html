@@ -12,8 +12,9 @@
 <body id="top">
     <!-- start header -->
     <header>
+        <a href="#main-content" aria-label="Skip to main content" class="skip">Skip to main content</a>
         <nav class="navbar row">
-            <div class="left-nav col-12 col-lg-4">
+            <div role="contentinfo" class="left-nav col-12 col-lg-4">
                 <a class="navbar-brand" href="index.html">
                     <picture class="logo-banner">
                         <source media="(max-width: 430px)" srcset="images/logo-1x.png">
@@ -23,7 +24,7 @@
                     Nhu Ly Designer
                 </a>
             </div>
-            <div class="right-nav nav-item col-12 col-lg-8 d-flex justify-content-end align-items-center gap-5">
+            <div role="navigation" class="right-nav nav-item col-12 col-lg-8 d-flex justify-content-end align-items-center gap-5">
                 <a class="nav-link" href="index.html">Home</a>
                 <a class="nav-link text-decoration-underline" href="projects.html">Projects</a>
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -33,16 +34,16 @@
 
     <main>
         <!-- making banner -->
-        <div id="baner-slide" class="banner row carousel slide" data-bs-ride="carousel">
-            <div class="slide-1 row position-relative carousel-item active">
-                <div class="banner-container">
+        <div role="banner" id="baner-slide" class="banner row carousel slide" data-bs-ride="carousel">
+            <div role="banner" class="slide-1 row position-relative carousel-item active">
+                <div role="img" class="banner-container">
                     <picture>
                         <source media="(max-width: 430px)" srcset="images/banner-2-1x.jpg">
                         <source media="(min-width: 430px)" srcset="images/banner-2-2x.jpg">
                         <img src="images/banner-2-2x.jpg" alt="banner-img" class="img-fluid">
                     </picture>
                 </div>
-                <div class="banner-text text-child position-absolute align-self-center">
+                <div role="textbox" class="banner-text text-child position-absolute align-self-center">
                     <h1>Graphic Design</h1>
                     <p>Memorability. Professionalism. Competitive Edge.</p>
                     <button type="button" class="btn btn-primary" onclick="document.location='contact.html'">Contact
@@ -50,15 +51,15 @@
                 </div>
             </div>
 
-            <div class="slide-2 row carousel-item">
-                <div class="banner-container position-relative">
+            <div role="banner" class="slide-2 row carousel-item">
+                <div role="img" class="banner-container position-relative">
                     <picture>
                         <source media="(max-width: 430px)" srcset="images/banner-1-1x.jpg">
                         <source media="(min-width: 430px)" srcset="images/banner-1-2x.jpg">
                         <img src="images/banner-1-2x.jpg" alt="banner-img" class="img-fluid">
                     </picture>
                 </div>
-                <div class="banner-text text-child position-absolute align-self-center">
+                <div role="contentinfo" class="banner-text text-child position-absolute align-self-center">
                     <h1>Nhu Ly Designer</h1>
                     <p>Creative. Innovation. Never late.</p>
                     <button type="button" class="btn btn-primary" onclick="document.location='contact.html'">Contact
@@ -67,21 +68,21 @@
             </div>
         </div>
 
-        <div class="cat-btn row justify-content-evenly p-2 m-2">
+        <!-- making category -->
+        <div role="menubar" class="cat-btn row justify-content-evenly p-2 m-2">
             <a href="#web" class="btn btn-primary align-content-center col-3 col-lg-2">Web Design</a>
             <a href="#graphic" class="btn btn-primary align-content-center col-3 col-lg-2">Graphic Design</a>
             <a href="#play" class="btn btn-primary align-content-center col-3 col-lg-2">Playground</a>
         </div>
 
-        <!-- making category -->
-        <div class="category d-grid gap-0 row-gap-3">
+        <div role="contentinfo" class="category d-grid gap-0 row-gap-3">
             <!-- Web cat -->
             <h5>Web Design</h5>
-            <div id="web" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card-wrapper row">
-                            <div class="web-1 card border-0 text-center p-sm-0 col-6 col-lg-3">
+            <div role="list" id="web" class="carousel slide">
+                <div role="listbox" class="carousel-inner">
+                    <div role="listbox" class="carousel-item active">
+                        <div role="listitem" class="card-wrapper row">
+                            <div role="contentinfo" class="web-1 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/web-cat-1-1x.png">
                                     <source media="(min-width: 430px)" srcset="images/web-cat-1-2x.png">
@@ -91,7 +92,7 @@
                                     <a href="#" class="mt-2 text-decoration-none card-title"><strong>Hydro Fill</strong></a>
                                 </div>
                             </div>
-                            <div class="web-2 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="web-2 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/web-cat-2-1x.jpeg">
                                     <source media="(min-width: 430px)" srcset="images/web-cat-2-2x.jpeg">
@@ -101,7 +102,7 @@
                                     <a href="#" class="mt-2 text-decoration-none card-title"><strong>Hubstaff</strong></a>
                                 </div>
                             </div>
-                            <div class="web-3 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="web-3 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/web-cat-3-1x.jpeg">
                                     <source media="(min-width: 430px)" srcset="images/web-cat-3-2x.jpeg">
@@ -111,7 +112,7 @@
                                     <a href="#" class="mt-2 text-decoration-none card-title"><strong>Billey</strong></a>
                                 </div>
                             </div>
-                            <div class="web-4 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="web-4 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/web-cat-4-1x.png">
                                     <source media="(min-width: 430px)" srcset="images/web-cat-4-2x.png">
@@ -124,9 +125,9 @@
                         </div>
                     </div>
 
-                    <div class="carousel-item">
-                        <div class="card-wrapper row">
-                            <div class="web-3 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                    <div role="listbox" class="carousel-item">
+                        <div role="listitem" class="card-wrapper row">
+                            <div role="contentinfo" class="web-3 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/web-cat-3-1x.jpeg">
                                     <source media="(min-width: 430px)" srcset="images/web-cat-3-2x.jpeg">
@@ -136,7 +137,7 @@
                                     <a href="#" class="mt-2 text-decoration-none card-title"><strong>Billey</strong></a>
                                 </div>
                             </div>
-                            <div class="web-1 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="web-1 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/web-cat-1-1x.png">
                                     <source media="(min-width: 430px)" srcset="images/web-cat-1-2x.png">
@@ -146,7 +147,7 @@
                                     <a href="#" class="mt-2 text-decoration-none card-title"><strong>Hydro Fill</strong></a>
                                 </div>
                             </div>
-                            <div class="web-4 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="web-4 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/web-cat-4-1x.png">
                                     <source media="(min-width: 430px)" srcset="images/web-cat-4-2x.png">
@@ -156,7 +157,7 @@
                                     <a href="#" class="mt-2 text-decoration-none card-title"><strong>Utech Media</strong></a>
                                 </div>
                             </div>
-                            <div class="web-2 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="web-2 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/web-cat-2-1x.jpeg">
                                     <source media="(min-width: 430px)" srcset="images/web-cat-2-2x.jpeg">
@@ -183,11 +184,11 @@
 
             <!-- Graphic Cat -->
             <h5>Graphic Design</h5>
-            <div id="graphic" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card-wrapper row">
-                            <div class="gra-1 card border-0 text-center p-sm-0 col-6 col-lg-3">
+            <div role="list" id="graphic" class="carousel slide">
+                <div role="listbox" class="carousel-inner">
+                    <div role="listbox" class="carousel-item active">
+                        <div role="listitem" class="card-wrapper row">
+                            <div role="contentinfo" class="gra-1 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/gra-cat-1-1x.jpg">
                                     <source media="(min-width: 430px)" srcset="images/gra-cat-1-2x.jpg">
@@ -198,7 +199,7 @@
                                             2019</strong></a>
                                 </div>
                             </div>
-                            <div class="gra-2 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="gra-2 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/gra-cat-2-1x.jpg">
                                     <source media="(min-width: 430px)" srcset="images/gra-cat-2-2x.jpg">
@@ -209,7 +210,7 @@
                                             Poster</strong></a>
                                 </div>
                             </div>
-                            <div class="gra-3 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="gra-3 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/gra-cat-3-1x.jpg">
                                     <source media="(min-width: 430px)" srcset="images/gra-cat-3-2x.jpg">
@@ -219,7 +220,7 @@
                                     <a href="#" class="mt-2 text-decoration-none card-title"><strong>Pokemon Calendar</strong></a>
                                 </div>
                             </div>
-                            <div class="gra-4 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="gra-4 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/gra-cat-4-1x.jpg">
                                     <source media="(min-width: 430px)" srcset="images/gra-cat-4-2x.jpg">
@@ -232,9 +233,9 @@
                         </div>
                     </div>
 
-                    <div class="carousel-item">
-                        <div class="card-wrapper row">
-                            <div class="gra-3 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                    <div role="listbox" class="carousel-item">
+                        <div role="listitem" class="card-wrapper row">
+                            <div role="contentinfo" class="gra-3 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/gra-cat-3-1x.jpg">
                                     <source media="(min-width: 430px)" srcset="images/gra-cat-3-2x.jpg">
@@ -244,7 +245,7 @@
                                     <a href="#" class="mt-2 text-decoration-none card-title"><strong>Pokemon Calendar</strong></a>
                                 </div>
                             </div>
-                            <div class="gra-1 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="gra-1 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/gra-cat-1-1x.jpg">
                                     <source media="(min-width: 430px)" srcset="images/gra-cat-1-2x.jpg">
@@ -255,7 +256,7 @@
                                             2019</strong></a>
                                 </div>
                             </div>
-                            <div class="gra-2 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="gra-2 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/gra-cat-2-1x.jpg">
                                     <source media="(min-width: 430px)" srcset="images/gra-cat-2-2x.jpg">
@@ -266,7 +267,7 @@
                                             Poster</strong></a>
                                 </div>
                             </div>
-                            <div class="gra-4 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="gra-4 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/gra-cat-4-1x.jpg">
                                     <source media="(min-width: 430px)" srcset="images/gra-cat-4-2x.jpg">
@@ -293,11 +294,11 @@
 
             <!-- Playground Cat -->
             <h5>Playground</h5>
-            <div id="play" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card-wrapper row">
-                            <div class="play-1 card border-0 text-center p-sm-0 col-6 col-lg-3">
+            <div role="list" id="play" class="carousel slide">
+                <div role="listbox" class="carousel-inner">
+                    <div role="listbox" class="carousel-item active">
+                        <div role="listitem" class="card-wrapper row">
+                            <div role="contentinfo" class="play-1 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/play-cat-1-1x.jpg">
                                     <source media="(min-width: 430px)" srcset="images/play-cat-1-2x.jpg">
@@ -307,7 +308,7 @@
                                     <a href="#" class="mt-2 text-decoration-none card-title"><strong>Wooden shophouse</strong></a>
                                 </div>
                             </div>
-                            <div class="play-2 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="play-2 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/play-cat-2-1x.jpg">
                                     <source media="(min-width: 430px)" srcset="images/play-cat-2-2x.jpg">
@@ -317,7 +318,7 @@
                                     <a href="#" class="mt-2 text-decoration-none card-title"><strong>Bouncer design</strong></a>
                                 </div>
                             </div>
-                            <div class="play-3 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="play-3 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/play-cat-3-1x.jpg">
                                     <source media="(min-width: 430px)" srcset="images/play-cat-3-2x.jpg">
@@ -327,7 +328,7 @@
                                     <a href="#" class="mt-2 text-decoration-none card-title"><strong>Wooden train table</strong></a>
                                 </div>
                             </div>
-                            <div class="play-4 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="play-4 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/play-cat-4-1x.jpg">
                                     <source media="(min-width: 430px)" srcset="images/play-cat-4-2x.jpg">
@@ -341,9 +342,9 @@
                         </div>
                     </div>
 
-                    <div class="carousel-item">
-                        <div class="card-wrapper row">
-                            <div class="play-3 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                    <div role="listbox" class="carousel-item">
+                        <div role="listitem" class="card-wrapper row">
+                            <div role="contentinfo" class="play-3 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/play-cat-3-1x.jpg">
                                     <source media="(min-width: 430px)" srcset="images/play-cat-3-2x.jpg">
@@ -353,7 +354,7 @@
                                     <a href="#" class="mt-2 text-decoration-none card-title"><strong>Wooden train table</strong></a>
                                 </div>
                             </div>
-                            <div class="play-1 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="play-1 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/play-cat-1-1x.jpg">
                                     <source media="(min-width: 430px)" srcset="images/play-cat-1-2x.jpg">
@@ -363,7 +364,7 @@
                                     <a href="#" class="mt-2 text-decoration-none card-title"><strong>Wooden shophouse</strong></a>
                                 </div>
                             </div>
-                            <div class="play-2 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="play-2 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/play-cat-2-1x.jpg">
                                     <source media="(min-width: 430px)" srcset="images/play-cat-2-2x.jpg">
@@ -373,7 +374,7 @@
                                     <a href="#" class="mt-2 text-decoration-none card-title"><strong>Bouncer design</strong></a>
                                 </div>
                             </div>
-                            <div class="play-4 card border-0 text-center p-sm-0 col-6 col-lg-3">
+                            <div role="contentinfo" class="play-4 card border-0 text-center p-sm-0 col-6 col-lg-3">
                                 <picture>
                                     <source media="(max-width: 430px)" srcset="images/play-cat-4-1x.jpg">
                                     <source media="(min-width: 430px)" srcset="images/play-cat-4-2x.jpg">
@@ -403,7 +404,7 @@
 
     <!-- start footer -->
     <footer class="d-flex justify-content-lg-between p-4">
-        <div>
+        <div role="img">
             <a class="navbar-brand" href="index.html">
                 <picture class="logo-banner">
                     <source media="(max-width: 430px)" srcset="images/logo-1x.png">
@@ -413,17 +414,17 @@
             </a>
             <blockquote class="pt-lg-5">© by Nhu Ly Designer 2024</blockquote>
         </div>
-        <div class="pages d-flex flex-column">
+        <div role="navigation" class="pages d-flex flex-column">
             <a class="text-decoration-none text-black" href="index.html">Home</a>
             <a class="text-decoration-none text-black" href="projects.html">Projects</a>
             <a class="text-decoration-none text-black" href="Contact.html">Contact</a>
         </div>
-        <div class="social-media d-flex flex-column">
+        <div role="navigation" class="social-media d-flex flex-column">
             <a class="text-decoration-none text-black" href="#">Facebook</a>
             <a class="text-decoration-none text-black" href="#">Twitter</a>
             <a class="text-decoration-none text-black" href="#">Instagram</a>
         </div>
-        <div class="footer-contact">
+        <div role="textbox" class="footer-contact">
             <p class="m-0 m-lg-0">+44 345 678 903</p>
             <p class="m-0 m-lg-0">adobexd@mail.com</p>
         </div>
