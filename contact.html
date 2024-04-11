@@ -13,7 +13,7 @@
     <!-- start header -->
     <header>
         <nav class="navbar row">
-            <div class="left-nav col-12 col-lg-4">
+            <div role="contentinfo" class="left-nav col-12 col-lg-4">
                 <a class="navbar-brand" href="index.html">
                     <picture class="logo-banner">
                         <source media="(max-width: 430px)" srcset="images/logo-1x.png">
@@ -23,7 +23,7 @@
                     Nhu Ly Designer
                 </a>
             </div>
-            <div class="right-nav nav-item col-12 col-lg-8 d-flex justify-content-end align-items-center gap-5">
+            <div role="navigation" class="right-nav nav-item col-12 col-lg-8 d-flex justify-content-end align-items-center gap-5">
                 <a class="nav-link" href="index.html">Home</a>
                 <a class="nav-link" href="projects.html">Projects</a>
                 <a class="nav-link text-decoration-underline" href="contact.html">Contact</a>
@@ -33,20 +33,20 @@
 
     <!-- Start main -->
     <main>
-        <div class="contact row container-md">
-            <div class="form col-12 col-lg-5 align-self-center order-1">
+        <div role="contentinfo" class="contact row container-md">
+            <div role="form" class="form col-12 col-lg-5 align-self-center order-1">
                 <h4>You have an issue or you need an advise
                 </h4>
                 <form action="submit">
-                    <div class="mb-3 name">
+                    <div role="textbox" class="mb-3 name">
                         <label id="inputname">Name</label>
                         <input type="text" class="form-control" placeholder="type your name here">
                     </div>
-                    <div class="mb-3 email">
+                    <div role="textbox" class="mb-3 email">
                         <label id="inputemail">Email address</label>
                         <input type="email" class="form-control" placeholder="type your email here">
                     </div>
-                    <div class="mb-3 situation">
+                    <div role="textbox" class="mb-3 situation">
                         <label id="inputsituation">Your situation</label>
                         <select name="situation" id="situation" class="form-select mb-3">
                             <option value="1">I need a website</option>
@@ -56,7 +56,7 @@
                             <option value="4">I have the other issues</option>
                         </select>
                     </div>
-                    <div class="message mb-3">
+                    <div role="textbox" class="message mb-3">
                         <label id="inputmessage">Your message</label>
                         <textarea placeholder="your message here" class="form-control"></textarea>
                     </div>
@@ -64,13 +64,13 @@
                 </form>
             </div>
 
-            <div class="contact-img col-12 col-lg-5 order-lg-2 offset-lg-2">
+            <div role="img" class="contact-img col-12 col-lg-5 order-lg-2 offset-lg-2">
                 <picture>
                     <source media="(max-width: 430px)" srcset="images/profile-pic-1x.png">
                     <source media="(min-width: 430px)" srcset="images/profile-pic-2x.png">
                     <img src="images/profile-pic-2x.png" alt="about-img" class="img-fluid">
                 </picture>
-                <div class="bg-primary">
+                <div role="textbox" class="bg-primary">
                     <p class="text-white text-center">Nhu Ly</p>
                     <p class="text-white text-center">+123 456 789 234  |  nhuly@gmail.com</p>
                 </div>
@@ -80,7 +80,7 @@
 
     <!-- start footer -->
     <footer class="d-flex justify-content-lg-between p-4">
-        <div>
+        <div role="contentinfo">
             <a class="navbar-brand" href="index.html">
                 <picture class="logo-banner">
                         <source media="(max-width: 430px)" srcset="images/logo-1x.png">
@@ -90,17 +90,17 @@
             </a>
             <blockquote>© by Nhu Ly Designer 2024</blockquote>
         </div>
-        <div class="pages d-flex flex-column">
+        <div role="navigation" class="pages d-flex flex-column">
             <a class="text-decoration-none text-black" href="index.html">Home</a>
             <a class="text-decoration-none text-black" href="projects.html">Projects</a>
             <a class="text-decoration-none text-black" href="Contact.html">Contact</a>
         </div>
-        <div class="social-media d-flex flex-column">
+        <div role="navigation" class="social-media d-flex flex-column">
             <a class="text-decoration-none text-black" href="#">Facebook</a>
             <a class="text-decoration-none text-black" href="#">Twitter</a>
             <a class="text-decoration-none text-black" href="#">Instagram</a>
         </div>
-        <div class="footer-contact">
+        <div role="textbox" class="footer-contact">
             <p>+44 345 678 903</p>
             <p>adobexd@mail.com</p>
         </div>
