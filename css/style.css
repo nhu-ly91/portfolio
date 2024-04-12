@@ -81,12 +81,12 @@ body {
     }
 
     #banner-textbox {
-        scale: 70%;
+        transform: scale(0.7);
         margin-left: -50px;
     }
 
     .banner-textbox-2 {
-        scale: 70%;
+        transform: scale(0.7);
         margin-left: 0px;
         top: -30px;
     }
