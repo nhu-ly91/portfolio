@@ -3,15 +3,24 @@ html {
 }
 :root {
     --custom-dark-blue: #000F24;
-    --custom-orange: #EE5A28;
-    --custom-light-orange: #F4901E;
+    --custom-red: #BE1E2D;
+    --custom-orange: #EC1C24;
+    --custom-light-orange: #FAAF40;
 }
 .btn-primary {
-    background-color: var(--custom-orange);
+    background-color: var(--custom-red);
     border: none;
 }
 .btn-primary:hover{
-    background-color: var(--custom-light-orange);
+    background-color: var(--custom-orange);
+}
+.number {
+    font-size: 30pt;
+    font-weight: bold;
+    margin: 0;
+}
+.content {
+    font-size: 10pt;
 }
 body {
     background-color: var(--custom-dark-blue);
@@ -35,7 +44,7 @@ h3 {
     font-size: 15pt;
 }
 h2 {
-    font-size: 40pt;
+    font-size: 38pt;
     font-weight: bold;
 }
 p {
