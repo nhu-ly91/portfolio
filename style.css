@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --custom-dark-blue: #000F24;
+    --custom-orange: #EE5A28;
+    --custom-light-orange: #F4901E;
+}
+.btn-primary {
+    background-color: var(--custom-orange);
+    border: none;
+}
+.btn-primary:hover{
+    background-color: var(--custom-light-orange);
+}
+body {
+    background-color: var(--custom-dark-blue);
+    font-family: Bai Jamjuree;
+    width: 100%;
+    color: white;
+}
+nav {
+    height: 120px;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15pt;
+    color: white;
+}
+.social-bar {
+    color: white;
+}
+h3 {
+    font-size: 15pt;
+}
+h2 {
+    font-size: 40pt;
+    font-weight: bold;
+}
