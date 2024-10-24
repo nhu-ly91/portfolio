@@ -5,71 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <img class="logo-nav" src="" alt="logo-nav">
-        <ul class="nav-bar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">About</a></li>
-            <li><a href="index.html">Works</a></li>
-            <li><a href="index.html">Contact</a></li>
-        </ul>
-        <ul class="social-bar">
-            <i class="bi bi-linkedin"></i>
-            <i class="bi bi-youtube"></i>
-            <i class="bi bi-instagram"></i>
-        </ul>
-    </header>
+<body class="w-100">
+    <nav class="navbar">
+        <a class="logo-nav" href="index.html"><img src="img/nav-logo.png" alt="logo-nav" height="80px"></a>
+        <div class="nav-bar d-flex justify-content-center align-items-center gap-5">
+            <a href="index.html">Home</a></li>
+            <a href="#about">About</a></li>
+            <a href="#work">Works</a></li>
+            <a href="#contact">Contact</a></li>
+        </div>
+        <div class="social-bar col-1 d-flex justify-content-end align-items-center gap-3">
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+        </div>
+    </nav>
 
     <main>
         <!-- home part -->
-        <section class="home-part">
-            <img src="" alt="banner-img">
-            <h3>A SYMPHONY OF COLORS AND EMOTIONS</h3>
-            <h2>The enchanting journey of creativity.</h2>
-            <p>Celebrate the power of art to transform, heal, and inspire, as each brushstroke opens a door to new worlds waiting to be explored.</p>
-            <button>MY INFO</button>
-            <button>CONTACT NOW</button>
-        </section>
+        <div id="home" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item d-flex active">
+                    <div class="col-7">
+                        <img src="img/banner-1.jpg" class="d-block w-100" alt="banner-1">
+                    </div>
+                    <div class="col-5 align-self-center">
+                        <h3>A SYMPHONY OF COLORS AND EMOTIONS</h3>
+                        <h2>The enchanting journey of creativity.</h2>
+                        <p>Celebrate the power of art to transform, heal, and inspire, as each brushstroke opens a door to new worlds waiting to be explored.</p>
+                        <button class="btn btn-primary btn-sm">MY INFO</button>
+                        <button class="btn btn-primary btn-sm">CONTACT NOW</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div>
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div>
+                        <h3>A SYMPHONY OF COLORS AND EMOTIONS</h3>
+                        <h2>The enchanting journey of creativity.</h2>
+                        <p>Celebrate the power of art to transform, heal, and inspire, as each brushstroke opens a door to new worlds waiting to be explored.</p>
+                        <button class="btn btn-primary btn-sm">MY INFO</button>
+                        <button class="btn btn-primary btn-sm">CONTACT NOW</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div>
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div>
+                        <h3>A SYMPHONY OF COLORS AND EMOTIONS</h3>
+                        <h2>The enchanting journey of creativity.</h2>
+                        <p>Celebrate the power of art to transform, heal, and inspire, as each brushstroke opens a door to new worlds waiting to be explored.</p>
+                        <button class="btn btn-primary btn-sm">MY INFO</button>
+                        <button class="btn btn-primary btn-sm">CONTACT NOW</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
-        <section class="about-part">
-            <h2>Exploring the vibrant and ever-evolving world of graphic design.</h2>
-            <p>I am a passionate Graphic Designer. I approach each project as an opportunity to push the boundaries of creativity and innovation. My multifaceted background includes creating powerful designs for stage advertising, POP, branding, packaging, and playground construction drawings. With a keen eye for detail and a commitment to excellence, I strive to bring unique perspectives to life while collaborating with other professionals to achieve high goals and meet deadlines.
-            <br>
-            <br>
-            My portfolio is a curated collection of diverse designs that reflect my journey of exploration in the vast universe of graphic design. I am dedicated to staying current with the latest trends, continuously offering ideas and visuals to spark new trends. Join me as I navigate this colorful and dynamic field, where each project is a new adventure and a chance to leave a lasting impression.</p>
-            <div>
-                <p>10+</p>
-                <p>YEARS SPENT</p>
-            </div>
-            <div>
-                <p>10+</p>
-                <p>GLOBAL BRANDS</p>
-            </div>
-            <div>
-                <p>300+</p>
-                <p>PROJECTS</p>
-            </div>
-            <div>
-                <img src="" alt="pkm-cor">
+        <!-- about part -->
+        <section id="about" class="about-part d-flex">
+            <div class="col-6">
+                <h2>Exploring the vibrant and ever-evolving world of graphic design.</h2>
+                <p>I am a passionate Graphic Designer. I approach each project as an opportunity to push the boundaries of creativity and innovation. My multifaceted background includes creating powerful designs for stage advertising, POP, branding, packaging, and playground construction drawings. With a keen eye for detail and a commitment to excellence, I strive to bring unique perspectives to life while collaborating with other professionals to achieve high goals and meet deadlines.
+                <br>
+                <br>
+                My portfolio is a curated collection of diverse designs that reflect my journey of exploration in the vast universe of graphic design. I am dedicated to staying current with the latest trends, continuously offering ideas and visuals to spark new trends. Join me as I navigate this colorful and dynamic field, where each project is a new adventure and a chance to leave a lasting impression.</p>
+                <div class="d-flex">
+                    <div>
+                        <p>10+</p>
+                        <p>YEARS SPENT</p>
+                    </div>
+                    <div>
+                        <p>10+</p>
+                        <p>GLOBAL BRANDS</p>
+                    </div>
+                    <div>
+                        <p>300+</p>
+                        <p>PROJECTS</p>
+                    </div>
+                </div>
+            </div>               
+            <div class="d-block w-100 col-12">
+                <img src="img/about.png" alt="pkm-cor">
                 <p>Nhu Thi Quynh Ly</p>
                 <p>Graphic & Web Designer</p>
             </div>
         </section>
 
-        <section class="work-part">
+        <!-- work part -->
+        <section id="work" class="work-part">
             <h2>Unlocking creative brilliance for your branding, print and web.</h2>
             <p>Elevate your brand with creative brilliance. My portfolio highlights innovative designs for branding, print, and web, tailored to captivate your audience. Ready for standout artworks?</p>
-            <button>ALL</button>
-            <button>PRINT</button>
-            <button>PACKAGING</button>
-            <button>BRANDING</button>
-            <button>WEBSITE</button>
-            <button>VIDEO</button>
+            <button class="btn btn-primary btn-sm">ALL</button>
+            <button class="btn btn-primary btn-sm">PRINT</button>
+            <button class="btn btn-primary btn-sm">PACKAGING</button>
+            <button class="btn btn-primary btn-sm">BRANDING</button>
+            <button class="btn btn-primary btn-sm">WEBSITE</button>
+            <button class="btn btn-primary btn-sm">VIDEO</button>
         </section>
 
-        <section class="contact-part">
+        <!-- contact part -->
+        <section id="contact" class="contact-part">
             <h2>Get in touch and bring your vision to life.</h2>
             <p>Whether you're ready to discuss your design project, have a question, or simply want to say hello, I'm excited to connect with you. Let's embark on a creative journey together and create something extraordinary.</p>
             <form action="">
@@ -81,7 +130,7 @@
                 <br>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
                 <br>
-                <button>Send Message</button>
+                <button class="btn btn-primary">SEND MESSAGE</button>
             </form>
         </section>
     </main>
@@ -90,10 +139,11 @@
         <p>nhuthiquynhly@gmail.com</p>
         <div class="social-footer">
             <i class="bi bi-linkedin"></i>
-            <i class="bi bi-youtube"></i>
             <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
         </div>
         <p>Copyright © 2024 - by Nhu Thi Quynh Ly - Portfolio</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
