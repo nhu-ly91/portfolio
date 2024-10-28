@@ -7,6 +7,13 @@ html {
     --custom-orange: #EC1C24;
     --custom-light-orange: #FAAF40;
 }
+.nav-link {
+    margin: 0 20px;
+    color: white;
+}
+.nav-link:hover {
+    color: var(--custom-red);
+}
 .btn-primary {
     background-color: var(--custom-red);
     border: none;
@@ -14,8 +21,17 @@ html {
 .btn-primary:hover{
     background-color: var(--custom-orange);
 }
+.border-primary {
+    border-color: var(--custom-orange) !important;
+}
 .number {
     font-size: 30pt;
+    font-weight: bold;
+    margin: 0;
+}
+.plus  {
+    font-size: 30pt;
+    color: var(--custom-orange);
     font-weight: bold;
     margin: 0;
 }
